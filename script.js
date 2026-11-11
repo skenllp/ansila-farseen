@@ -15,7 +15,7 @@ var DATE_TEXT = "";
   if(n1) n1.textContent = B1;
   if(n2) n2.textContent = G1;
   if(DATE_TEXT) document.querySelector("[data-date]").textContent = DATE_TEXT;
-  document.title = names + " – Wedding Invitation";
+  document.title = names + " – Nikkah Invitation";
 
   var env = document.getElementById("env");
   var music = document.getElementById("bgMusic");
@@ -50,7 +50,7 @@ var DATE_TEXT = "";
     for(var i=0;i<first;i++)H+='<div></div>';
     for(var d=1;d<=n;d++)H+='<div><div class="x'+(d===28?' on':'')+'">'+d+'</div></div>';
     g.innerHTML=H;
-    document.getElementById("addcal").href="https://calendar.google.com/calendar/render?action=TEMPLATE&text="+encodeURIComponent("Wedding – "+names)+"&dates=20261128T073000Z/20261128T093000Z&location="+encodeURIComponent("TP Convention Centre, Ambalapara Road, Thiruvizhamkunnu");
+    document.getElementById("addcal").href="https://calendar.google.com/calendar/render?action=TEMPLATE&text="+encodeURIComponent("Nikkah – "+names)+"&dates=20261128T073000Z/20261128T093000Z&location="+encodeURIComponent("TP Convention Centre, Ambalapara Road, Thiruvizhamkunnu");
     var c2=document.getElementById("cd2");
     function t2(){var d=new Date(WEDDING)-new Date();if(d<0)d=0;c2.innerHTML=Math.floor(d/864e5)+" days "+Math.floor(d/36e5)%24+" hours "+Math.floor(d/6e4)%60+" min <span class=\"sec\">"+Math.floor(d/1e3)%60+" sec</span>"}
     t2();setInterval(t2,1000);
